@@ -29,6 +29,11 @@ namespace Microsoft.ApplicationInsights.Log4NetAppender
         private TelemetryClient telemetryClient;
 
         /// <summary>
+        /// Gets or sets the Log level from which Trace should be send to AI
+        /// </summary>
+        public Level LocationInformationLogLevel { get; set; }
+
+        /// <summary>
         /// Gets or sets The Application Insights instrumentationKey for your application. 
         /// </summary>
         /// <remarks>
@@ -168,7 +173,12 @@ namespace Microsoft.ApplicationInsights.Log4NetAppender
             AddLoggingEventProperty("LoggerName", loggingEvent.LoggerName, metaData);
             AddLoggingEventProperty("ThreadName", loggingEvent.ThreadName, metaData);
 
-            var locationInformation = loggingEvent.LocationInformation;
+            var locationInformation = 
+                this.LocationInformationLogLevel == null
+                 || loggingEvent.Level >= this.LocationInformationLogLevel
+                ? loggingEvent.LocationInformation
+                : null;
+
             if (locationInformation != null)
             {
                 AddLoggingEventProperty("ClassName", locationInformation.ClassName, metaData);
