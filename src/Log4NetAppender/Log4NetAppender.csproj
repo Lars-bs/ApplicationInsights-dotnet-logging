@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <IncludeSymbols>False</IncludeSymbols>
     <PackageId>Microsoft.ApplicationInsights.Log4NetAppender</PackageId>
     <Title>Application Insights Log4Net Appender</Title>
