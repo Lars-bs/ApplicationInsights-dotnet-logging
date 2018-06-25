@@ -7,7 +7,8 @@
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-
+    <AssemblyVersion>2.6.5.0</AssemblyVersion>
+    <FileVersion>2.6.5.1</FileVersion>
     <TargetFrameworks>net45;netstandard1.3</TargetFrameworks>
 
     <RootNamespace>Microsoft.ApplicationInsights.Log4NetAppender</RootNamespace>
