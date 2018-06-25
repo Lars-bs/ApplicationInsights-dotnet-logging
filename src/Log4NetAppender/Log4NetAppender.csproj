@@ -1,5 +1,4 @@
 ﻿<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
@@ -15,7 +14,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <BuildNumber Condition=" '$(BuildNumber)' == '' ">0</BuildNumber>
     <IncludeSymbols>False</IncludeSymbols>
     <PackageId>Microsoft.ApplicationInsights.Log4NetAppender</PackageId>
     <Title>Application Insights Log4Net Appender</Title>
