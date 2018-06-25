@@ -23,6 +23,7 @@
     <Title>Application Insights Log4Net Appender</Title>
     <Description>Application Insights Log4Net Appender is a customer appender allowing you to send Log4Net log messages to Application Insights. Application Insights will collect your logs from multiple sources and provide rich powerful search capabilities. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156</Description>
     <PackageTags>$(PackageTags) Log4Net</PackageTags>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), 'Product.props'))\Product.props" />
