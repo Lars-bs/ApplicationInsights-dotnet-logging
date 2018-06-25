@@ -14,7 +14,6 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <IncludeSymbols>False</IncludeSymbols>
     <PackageId>Microsoft.ApplicationInsights.Log4NetAppender</PackageId>
