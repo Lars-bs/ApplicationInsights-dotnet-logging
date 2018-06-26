@@ -24,6 +24,8 @@
 
   <PropertyGroup>
     <GenerateAdditionalSources>false</GenerateAdditionalSources>
+    <DelaySign>false</DelaySign>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
