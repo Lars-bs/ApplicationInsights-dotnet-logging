@@ -5,7 +5,6 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-using System;
 using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
@@ -20,12 +19,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCulture("")]
 
 [assembly: NeutralResourcesLanguageAttribute("en-US")]
-
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
-[assembly: CLSCompliant(true)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("599daa99-7d0b-4cae-81b8-3a73509f2efa")]
