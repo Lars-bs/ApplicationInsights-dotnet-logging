@@ -30,11 +30,5 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("44abc834-bd19-449f-ad64-f8c83ca078ed")]
 
-[assembly: InternalsVisibleTo("Microsoft.ApplicationInsights.NLogTarget.Net45.Tests, PublicKey=" + AssemblyInfo.PublicKey)]
-[assembly: InternalsVisibleTo("Microsoft.ApplicationInsights.NLogTarget.NetCoreApp10.Tests, PublicKey=" + AssemblyInfo.PublicKey)]
-
-internal static class AssemblyInfo
-{
-    // Public key; assemblies are delay signed or OSS signed
-    public const string PublicKey = "0024000004800000940000000602000000240000525341310004000001000100b5fc90e7027f67871e773a8fde8938c81dd402ba65b9201d60593e96c492651e889cc13f1415ebb53fac1131ae0bd333c5ee6021672d9718ea31a8aebd0da0072f25d87dba6fc90ffd598ed4da35e44c398c454307e8e33b8426143daec9f596836f97c8f74750e5975c64e2189f45def46b2a2b1247adc3652bf5c308055da9";
-}
+[assembly: InternalsVisibleTo("Microsoft.ApplicationInsights.NLogTarget.Net45.Tests")]
+[assembly: InternalsVisibleTo("Microsoft.ApplicationInsights.NLogTarget.NetCoreApp10.Tests")]
